@@ -1,9 +1,14 @@
+import './Pokemon.css';
+
+
+// eslint-disable-next-line react/prop-types
 function Pokemon ({name,image})
 {
 
-return(<div>
-    <div>{name}</div>
-    <div ><img src={image}/></div>
+return(<div className="pokemon">
+    <div className='pokemonname'>{name}</div>
+    <div>
+    <img className='pokemonimg' src={image}/></div>
 </div>
 )
 
